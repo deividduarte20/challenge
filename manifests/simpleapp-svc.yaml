@@ -10,14 +10,10 @@ metadata:
   selfLink: /api/v1/namespaces/default/services/challenge
   uid: b055b71b-d524-11ed-bc81-f04da2d8b525
 spec:
-  clusterIP: 10.110.193.168
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
     app: challenge
-  sessionAffinity: None
   type: ClusterIP
-status:
-  loadBalancer: {}
