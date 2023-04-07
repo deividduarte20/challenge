@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  Type: desafio
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: simpleapp-cm
