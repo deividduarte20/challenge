@@ -48,3 +48,9 @@ chmod +x provisiona_deploy.sh
 ```bash
 ./provisiona_deploy.sh
 ```
+
+
+## obtenha o endereço de acesso a aplicação:
+```bash
+kubectl get ingress 
+```
