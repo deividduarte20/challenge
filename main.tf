@@ -1,40 +1,19 @@
-# Provedor Google Cloud
-provider "google" {
-  project = "your-project-id"
-  region  = "us-central1"
-}
-
-# Definição do recurso cluster GKE
-resource "google_container_cluster" "cluster" {
+# Recurso do Google Kubernetes Engine
+resource "google_container_cluster" "my_cluster" {
   name               = var.name_cluster
-  location           = var.location
-  remove_default_node_pool = true
-  initial_node_count  = 1
+  location           = "us-central1"
+  initial_node_count = 1
 
-  # Configuração do pool de nós
   node_config {
-    machine_type = "n1-standard-2"
-    oauth_scopes = [
-      "https://www.googleapis.com/auth/compute",
-      "https://www.googleapis.com/auth/devstorage.read_only",
-      "https://www.googleapis.com/auth/logging.write",
-      "https://www.googleapis.com/auth/monitoring",
-    ]
+    machine_type = "n1-standard-1"
   }
 
-  # Configuração do gerenciamento de versão do Kubernetes
-  master_version = "latest"
-}
+  master_auth {
+    # username = ""
+    # password = ""
 
-# Recurso que permite o acesso ao cluster pelo kubectl
-resource "google_container_cluster_iam_binding" "binding" {
-  project = "My First Project"
-  location = var.location
-  cluster = google_container_cluster.cluster.name
-  role    = "roles/container.admin"
-
-  members = [
-    "user:deividdua32@gmail.com",
-    "group:deividdua32@gmail.com",
-  ]
+    client_certificate_config {
+      issue_client_certificate = false
+    }
+  }
 }

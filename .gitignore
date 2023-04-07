@@ -3,3 +3,7 @@ install_*
 teste_
 distros.sh
 google-cloud*
+secon*
+chave.json
+terraform.tfstate
+terraform.tfstate.backup
