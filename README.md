@@ -11,6 +11,18 @@
 </br>gcloud-cli
 </br>gke-gcloud-auth-plugin
 
+## Baixe o projeto
+```bash
+git clone https://github.com/deividduarte20/challenge.git
+```
+
+## Entre no diretório challenge
+```bash
+cd challenge 
+```
+
+## Atenção deve-se inserir a chave.json (service account gcp) dentro do diretório challenge.
+
 ## Inicie o projeto
 ```bash
 terraform init
