@@ -39,7 +39,7 @@ terraform apply
 gcloud auth login
 ```
 
-## Defina o nome do projeto da console GCP
+## Defina o ID do projeto da console GCP
 ```bash
 gcloud config set project <PROJECT_ID>
 ```
