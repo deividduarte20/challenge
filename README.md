@@ -1,8 +1,7 @@
 # challenge
 
 ### Este desafio consiste em provisionar um cluster
-### GKE via terraform e com shell script proviona 
-### Deployment, service, configmap e ingress controller e nginx.
+### GKE via terraform e com shell script proviona deployment, service, configmap e ingress controller nginx.
 
 ## Requisitos
 
