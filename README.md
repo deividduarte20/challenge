@@ -44,7 +44,7 @@ gcloud auth login
 gcloud config set project <PROJECT_ID>
 ```
 
-## Para se conectar ao cluster GKE (Substitua <CLUSTER_NAME> pelo nome do cluster e region)
+## Para se conectar ao cluster GKE 
 ```bash
 gcloud container clusters get-credentials "my-gke-cluster" --region "us-central1"
 ```
