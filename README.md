@@ -22,6 +22,7 @@ cd challenge
 ```
 
 ## Atenção deve-se inserir a chave.json (service account gcp) dentro do diretório challenge.
+Altere o nome do projeto da gcp no arquivo provider.tf 
 
 ## Inicie o projeto
 ```bash
