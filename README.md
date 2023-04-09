@@ -69,3 +69,8 @@ chmod +x provisiona_deploy.sh
 ```bash
 kubectl get ingress 
 ```
+
+## Acesso a url
+<img src="images/api.png">
+
+<img src="images/api_path.png">
